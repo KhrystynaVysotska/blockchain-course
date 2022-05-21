@@ -35,13 +35,13 @@ if __name__ == "__main__":
     for sequence in sequences:
         print_possible_keys_number_for(sequence)
 
-    print("-" * 1000)
+    print("-" * 100)
 
     keys = {}
     for sequence in sequences:
         keys[sequence] = get_random_key_within(sequence)
 
-    print("-" * 1000)
+    print("-" * 100)
 
     for sequence in sequences:
         print(f"Started brute-force: {sequence} bits key...")
@@ -50,4 +50,4 @@ if __name__ == "__main__":
         print(f"Brute-force founded key: {bin(founded_key)}")
         print(f"Brute-force time: {duration} ms")
 
-        print("-" * 1000)
+        print("-" * 100)
